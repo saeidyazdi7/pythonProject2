@@ -1,4 +1,8 @@
-a = [1, 2, 3]
-b = ["a", "b", "c"]
-a[-1:] = b
-print(a)
+marks = {}
+name = input("name:")
+mark = float(input("mark:"))
+marks[name] = mark
+name2 = input("name:")
+mark2 = float(input("mark:"))
+marks[name2] = mark2
+print(marks)
