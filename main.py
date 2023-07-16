@@ -1,5 +1,4 @@
-n = int(input("Enter:"))
-while True:
-    if (n % 3 == 0) and (n % 7 == 0):
-        print(n)
-    n += 1
+row = 1
+while row <= 5:
+    print("*" * row)
+    row += 1
