@@ -1,9 +1,9 @@
-n = int(input("Enter:"))
-i = 1
-c = 0
-while i < n:
-    if n % i == 0:
-        c += i
-    i += 1
-if c == n:
-    print("Yes")
+m = float("inf")
+while True:
+    n = float(input("n:"))
+    if n < m:
+        m = n
+    s = input("Do yo continue?")
+    if s.lower() == "no":
+        break
+print(m, "is small")
