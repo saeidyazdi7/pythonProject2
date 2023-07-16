@@ -1,8 +1,6 @@
-marks = {}
-name = input("name:")
-mark = float(input("mark:"))
-marks[name] = mark
-name2 = input("name:")
-mark2 = float(input("mark:"))
-marks[name2] = mark2
-print(marks)
+dic = {}
+key = input("Keyword:")
+means = input("Mean:").split(",")
+dic[key] = means
+word = input("Enter:")
+print("Mean:", dic.get(word))
