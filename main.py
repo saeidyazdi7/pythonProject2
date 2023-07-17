@@ -1,12 +1,13 @@
-n = int(input("n:"))
-i = 2
-if n > 1:
-    while i < (n // 2) + 1:
-        if n % i == 0:
-            print("is not")
-            break
-        i += 1
-    else:
-        print(n, "is a prime")
-else:
-    print(n, "is not a prime number")
+l = ['rot', 'galb', 'lila', 'grun']
+i = 0
+while i < len(l):
+    s = l[i]
+    j = 0
+    while j < len(s):
+        if j % 2 == 0:
+            print(s[j].upper(), end='')
+        else:
+            print(s[j], end='')
+        j += 1
+    print()
+    i += 1
