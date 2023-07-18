@@ -1,8 +1,11 @@
-x = int(input("x:"))
-y = int(input("y:"))
-m = min(x, y)
+from random import choice
 
-for i in range(m, 0, -1):
-    if x % i == 0 and y % i == 0:
-        print(i)
+x = ["a", "b", "c"]
+y = x.copy()
+while True:
+    computer = choice(y)
+    answer = input(f"your guess  {computer} ? (y/n) :")
+    if "y" in answer.lower():
+        print("Computer Win!")
         break
+    y.remove(computer)
