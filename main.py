@@ -1,13 +1,9 @@
-from random import choice
-
-coin = ["shir", "khat"]
-shir = 0
-khat = 0
-for _ in range(1000):
-    r = choice(coin)
-    if r == "shir":
-        shir += 1
-    else:
-        khat += 1
-print(shir, "shir")
-print(khat, "khat")
+x = int(input("x:"))
+y = int(input("y:"))
+m = min(x, y)
+tmp = 1
+for i in range(1, m + 1):
+    if x % i == 0 and y % i == 0:
+        if i > tmp:
+            tmp = i
+print(tmp)
