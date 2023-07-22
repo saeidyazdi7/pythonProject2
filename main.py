@@ -1,16 +1,8 @@
-def fact(n):
-    f = 1
-    for i in range(1, n + 1):
-        f *= i
-    return f
+def max3(a, b, c):
+    return max(a, b, c)
 
 
-def sumFact(n):
-    sf = 0
-    for i in range(1, n + 1):
-        sf += fact(i)
-    return sf
-
-
-number = int(input("Enter :"))
-print("sum :", sumFact(number))
+x = int(input("Enter:"))
+y = int(input("Enter:"))
+z = int(input("Enter:"))
+print("Max:", max3(x, y, z))
