@@ -1,10 +1,5 @@
 def repeat(number, digit):
-    count = 0
-    while number > 0:
-        if number % 10 == digit:
-            count += 1
-        number //= 10
-    return count
+    return str(number).count(str(digit))
 
 
 number = int(input("Number:"))
