@@ -1,7 +1,16 @@
-def repeat(number, digit):
-    return str(number).count(str(digit))
+def fact(n):
+    f = 1
+    for i in range(1, n + 1):
+        f *= i
+    return f
 
 
-number = int(input("Number:"))
-digit = int(input("Digit:"))
-print(digit, "repeat", repeat(number, digit), "times")
+def sumFact(n):
+    sf = 0
+    for i in range(1, n + 1):
+        sf += fact(i)
+    return sf
+
+
+number = int(input("Enter :"))
+print("sum :", sumFact(number))
