@@ -1,8 +1,8 @@
-def max3():
-    x = int(input("Enter:"))
-    y = int(input("Enter:"))
-    z = int(input("Enter:"))
-    print("Max:", max(x, y, z))
+def func(a, b, c):
+    print("a:", a)
+    print("b:", b)
+    print("c:", c)
 
 
-max3()
+d = {'a': 1, 'b': 2, 'c': 3}
+func(**d)
