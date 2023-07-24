@@ -13,3 +13,4 @@ def a():
 
 
 a()
+print(x)
