@@ -5,9 +5,10 @@ def a():
     x = 9
 
     def b():
-        global x
+        nonlocal x
         x += 1
         print(x)
+
     b()
 
 
