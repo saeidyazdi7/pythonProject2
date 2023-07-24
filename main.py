@@ -1,6 +1,14 @@
-def func(x: int, y: int = 9, **d: dict):
-    return x, y, d
+x = 0
 
 
-print(func(1, c=7, h=8))
-print(func.__annotations__)
+def a():
+    x = 9
+
+    def b():
+        global x
+        x += 1
+        print(x)
+    b()
+
+
+a()
