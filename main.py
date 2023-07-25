@@ -1,8 +1,13 @@
-def off_show(a, b):
-    s = int(a - a * b / 100)
-    return s
+def char_type(c):
+    if c.isdigit():
+        print("Number")
+    elif c.islower():
+        print("Lower")
+    elif c.isupper():
+        print("Upper")
+    else:
+        print("Symbole")
 
 
-x = int(input("Enter:"))
-y = int(input("Enter:"))
-print(off_show(x, y))
+x = input("Enter:")
+char_type(x)
