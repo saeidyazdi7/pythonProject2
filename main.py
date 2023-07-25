@@ -1,14 +1,8 @@
-def square(n):
-    if n < 0:
-        return False
-    root = n ** 0.5
-    if root == int(root):
-        return True
-    else:
-        return False
+def off_show(a, b):
+    s = int(a - a * b / 100)
+    return s
 
 
-print(square(81))
-print(square(25))
-print(square(-9))
-print(square(24))
+x = int(input("Enter:"))
+y = int(input("Enter:"))
+print(off_show(x, y))
