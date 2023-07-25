@@ -1,13 +1,3 @@
-def char_type(c):
-    if c.isdigit():
-        print("Number")
-    elif c.islower():
-        print("Lower")
-    elif c.isupper():
-        print("Upper")
-    else:
-        print("Symbole")
-
-
-x = input("Enter:")
-char_type(x)
+li = [1, 2, 3, 4]
+new = list(map(lambda x: x ** 2, li))
+print(new)
