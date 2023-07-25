@@ -1,10 +1,9 @@
-def my_len(obj):  # تعریف یک تابع با نام my_len و یک پارامتر obj
-    count = 0  # ایجاد یک متغیر با مقدار صفر به عنوان شمارنده
-    for item in obj:  # حلقه for برای پیمایش در هر عضو obj
-        count += 1  # افزودن یک واحد به شمارنده
-    print(count)
-    return count  # برگرداندن مقدار شمارنده به عنوان خروجی تابع
+def my_max(lst):
+    max_element = lst[0]
+    for element in lst[1:]:
+        if element > max_element:
+            max_element = element
+    return max_element
 
-
-x = input("Enter:")
-my_len(x)
+lst = [5, 3, 7, 9, 2, 4]
+print(my_max(lst))
