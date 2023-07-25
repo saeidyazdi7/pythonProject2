@@ -1,10 +1,9 @@
-def my_min(lst):
-    min_element = lst[0]
-    for element in lst[1:]:
-        if element < min_element:
-            max_element = element
-    return min_element
+def my_sum(lst):
+    total = 0
+    for element in lst:
+        total = total + element
+    return total
 
 
-lst = [5, 3, 7, 9, 2, 4]
-print(min(lst))
+lst = [1, 2]
+print(my_sum(lst))
