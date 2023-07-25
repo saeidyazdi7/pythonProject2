@@ -1,9 +1,14 @@
-def my_sum(lst):
-    total = 0
-    for element in lst:
-        total = total + element
-    return total
+def square(n):
+    if n < 0:
+        return False
+    root = n ** 0.5
+    if root == int(root):
+        return True
+    else:
+        return False
 
 
-lst = [1, 2]
-print(my_sum(lst))
+print(square(81))
+print(square(25))
+print(square(-9))
+print(square(24))
