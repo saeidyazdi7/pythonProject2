@@ -1,7 +1,8 @@
-def repeat(num, dig):
-    return str(num).count(str(dig))
+def maxi():
+    x = int(input("X:"))
+    y = int(input("Y:"))
+    z = int(input("Z:"))
+    print(max(x, y, z))
 
 
-number = int(input("X:"))
-digit = int(input("Y:"))
-print(digit, "repeat", repeat(number, digit), "times")
+maxi()
