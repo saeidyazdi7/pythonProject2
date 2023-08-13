@@ -1,8 +1,5 @@
-def maxi():
-    x = int(input("X:"))
-    y = int(input("Y:"))
-    z = int(input("Z:"))
-    print(max(x, y, z))
+def func(a, b, c):
+    print(a, b, c)
 
 
-maxi()
+func([1, 2, 3], *(9, 2))
