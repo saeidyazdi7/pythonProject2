@@ -1,13 +1,6 @@
-from time import sleep
+def cube():
+    x = int(input("X:"))
+    print(x ** 3)
 
 
-def reverse(n):
-    if n <= 0:
-     return
-    sleep(0.5)
-    print(n)
-    n -= 1
-    reverse(n)
-
-
-reverse(20)
+cube()
