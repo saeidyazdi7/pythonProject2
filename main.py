@@ -1,8 +1,11 @@
+import copy
+
+
 def func(a):
-    a[1] = 0
+    a[0][1] = 4
     print(a)
 
 
-a = [1, 2, 3, 4, 5]
-func(a[:])
+a = [[1, 2], 3, 5]
+func(copy.deepcopy(a))
 print(a)
