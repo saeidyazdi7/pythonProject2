@@ -12,3 +12,4 @@ def func(a, *, b, c):
 
 
 func(a=10, b=1, c=9)
+print(help(func))
