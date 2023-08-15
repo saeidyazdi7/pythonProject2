@@ -1,6 +1,13 @@
-def func(x: int, y: int, z: int) -> int:
-    return x + y + z
+def func(a):
+    print(a)
+
+    def bunc(b):
+        print(b ** 3)
+
+    print(bunc.__name__)
+    bunc(a)
 
 
-print(func(1, 2, 3))
-print(func.__annotations__)
+func(2)
+print(func.__name__)
+
