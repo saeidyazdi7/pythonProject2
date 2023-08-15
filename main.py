@@ -1,7 +1,5 @@
-def func(a, b, c):
+def func(a=10, b=15, c=2):
     print(a, b, c)
 
 
-dic = {'a': 5, 'b': 7, 'c': 9}
-
-func(**dic)
+func()
