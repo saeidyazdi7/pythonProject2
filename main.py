@@ -1,13 +1,6 @@
 def func(a):
-    print(a)
-
-    def bunc(b):
-        print(b ** 3)
-
-    print(bunc.__name__)
-    bunc(a)
+    print(a ** 2)
 
 
-func(2)
-print(func.__name__)
-
+d = func
+d(6)
