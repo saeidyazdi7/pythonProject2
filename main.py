@@ -1,5 +1,8 @@
-def func(a, b, *c, d):
-    print(a, b, c, d)
+def func(a, b=0, *c, **d):
+    print("a:", a)
+    print("b:", b)
+    print("c:", c)
+    print("d:", d)
 
 
-func(1, 2, 3, 4, 5, 6, 7, 8, 9, 0, d=111)
+func(10,1,2,3,4,t="2")
