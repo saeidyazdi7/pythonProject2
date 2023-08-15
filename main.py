@@ -2,4 +2,6 @@ def func(a, b, c):
     print(a, b, c)
 
 
-func([1, 2, 3], *(9, 2))
+dic = {'a': 5, 'b': 7, 'c': 9}
+
+func(**dic)
