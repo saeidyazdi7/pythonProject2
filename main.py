@@ -1,11 +1,13 @@
-def a():
-    x=10
-    y=4
-    print(locals())
-def b():
-    x=0
-    y=7
-    print(locals())
-b()
-a()
-print(locals())
+x = 0
+
+
+def A():
+    x = 2
+    print(x)
+    def B():
+        x = 3
+        print(x)
+
+    B()
+A()
+print(x)
