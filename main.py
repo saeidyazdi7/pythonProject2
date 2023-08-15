@@ -1,17 +1,8 @@
-x = 0
+def func(a):
+    a[1] = 0
+    print(a)
 
 
-def A():
-    x = 2
-    print(x)
-
-    def B():
-        global x
-        x = 3
-        print(x)
-
-    B()
-
-
-A()
-print(x)
+a = [1, 2, 3, 4, 5]
+func(a[:])
+print(a)
