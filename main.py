@@ -1,15 +1,6 @@
-def func(a, *, b, c):
-    """
-
-    :param a: midi
-    :param b: midi
-    :param c: midi
-    :return: pas midi
-    """
-    print("a:", a)
-    print("b:", b)
-    print("c:", c)
+def func(x: int, y: int, z: int):
+    return x + y + z
 
 
-func(a=10, b=1, c=9)
-print(help(func))
+print(func(1, 2, 3))
+print(func.__annotations__)
