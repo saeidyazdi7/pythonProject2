@@ -1,13 +1,20 @@
-def dec(list):
-    print(sorted(list))
+def mysort(s):
+    def A(x):
+        print(sorted(x, reverse=True))
+    def error(z):
+        print("Error", z)
+    def B(y):
+        print(sorted(y))
+    if s == "a":
+        return A
+    elif s == "d":
+        return B
+    else:
+        return error
 
 
-def ced(list):
-    print(sorted(list, reverse=True))
+action = input(":")
 
+func = mysort(action)
 
-def edc(f, list):
-    f(list)
-
-
-edc(dec, [1, 4, 5, 6, 78, 32, 234, ])
+func([5, 7, 8, 9, 10, 2, 3, 1])
