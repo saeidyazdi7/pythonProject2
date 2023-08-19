@@ -1,10 +1,13 @@
-def discount(rate, price):
-    discount_rate = int(price * rate / 100)
-    new_price = price - discount_rate
-    print("discount rate:", discount_rate)
-    print("new price", new_price)
+def show_type(ch):
+    if 48 <= ord(ch) <= 57:
+        print("Number")
+    elif 65 <= ord(ch) <= 90:
+        print("Upper")
+    elif 97 <= ord(ch) <= 122:
+        print("Lower")
+    else:
+        print("Other")
 
 
-rate = int(input("rate:"))
-price = int(input("price:"))
-discount(rate, price)
+c = input("Enter:")
+show_type(c)
