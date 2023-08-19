@@ -1,9 +1,8 @@
-def lens(*args):
-    m = args[0]
-    for i in args:
-        if i < m:
-            m = i
-    return m
+def sum3(it):
+    S = 0
+    for i in it:
+        S += i
+    return S
 
 
-print(lens(2, 4, 6))
+print(sum3(2,2))
