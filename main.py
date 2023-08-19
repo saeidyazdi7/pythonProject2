@@ -1,8 +1,12 @@
-def sum3(it):
-    S = 0
-    for i in it:
-        S += i
-    return S
+def square(j):
+
+    for i in range(1, j):
+        if i ** 2 == j:
+            print(f"Yes! {i}*{i}={j}")
+            break
+    else:
+        print("NO")
 
 
-print(sum3(2,2))
+x = int(input("Enter:"))
+square(x)
