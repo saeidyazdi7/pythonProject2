@@ -1,9 +1,8 @@
-def func(a):
-    a += 1
-    print(a)
-    return a
+def lens(x):
+    count = 0
+    for _ in x:
+        count += 1
+    return count
 
 
-a = 4
-a = func(a)
-print(a)
+print(lens("saeid yazdi"))
