@@ -1,9 +1,9 @@
 def show_type(ch):
-    if 48 <= ord(ch) <= 57:
+    if "0" <= ch <= "9":
         print("Number")
-    elif 65 <= ord(ch) <= 90:
+    elif "a" <= ch <= "z":
         print("Upper")
-    elif 97 <= ord(ch) <= 122:
+    elif "A" <= ch <= "Z":
         print("Lower")
     else:
         print("Other")
