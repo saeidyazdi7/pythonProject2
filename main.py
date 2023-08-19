@@ -1,12 +1,10 @@
-def square(j):
-
-    for i in range(1, j):
-        if i ** 2 == j:
-            print(f"Yes! {i}*{i}={j}")
-            break
-    else:
-        print("NO")
+def discount(rate, price):
+    discount_rate = int(price * rate / 100)
+    new_price = price - discount_rate
+    print("discount rate:", discount_rate)
+    print("new price", new_price)
 
 
-x = int(input("Enter:"))
-square(x)
+rate = int(input("rate:"))
+price = int(input("price:"))
+discount(rate, price)
