@@ -1,2 +1,9 @@
-is_num = lambda s: s.replace(".", "", 1).isdigit()
-print(is_num("4.3"))
+from itertools import count
+
+count=count(10)
+print(next(count))
+print(next(count))
+print(next(count))
+print(next(count))
+print(next(count))
+print(next(count))
