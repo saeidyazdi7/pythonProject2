@@ -7,9 +7,7 @@ def dec(fof):
     return inner
 
 
+@dec
 def f():
     print("Saeid")
-
-
-new_func = dec(f)
-new_func()
+f()
