@@ -1,9 +1,15 @@
-from itertools import count
+def dec(fof):
+    def inner():
+        print("*")
+        fof()
+        print("*")
 
-count=count(10)
-print(next(count))
-print(next(count))
-print(next(count))
-print(next(count))
-print(next(count))
-print(next(count))
+    return inner
+
+
+def f():
+    print("Saeid")
+
+
+new_func = dec(f)
+new_func()
