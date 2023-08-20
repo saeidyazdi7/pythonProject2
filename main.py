@@ -1,15 +1,13 @@
-def dec(func):
+def star(func):
     def inner(*x, **y):
-        if y == 0:
-            return "warning!"
-        return func(*x, **y)
-
+        print("x" * 20)
+        func(*x, **y)
     return inner
 
 
-@dec
-def f(x, y, z):
-    return x * y * z["A"]
+@star
+def msg(name):
+    print("i am", name)
 
 
-print(f(5, 9, {"A": 2}))
+msg("Saeid")
