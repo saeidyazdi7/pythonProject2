@@ -1,5 +1,7 @@
-from functools import reduce
+def func(x):
+    return x % 3
 
-li = [1, 3, 5, 7, 9]
-new = reduce(lambda x, y: x + y, li)
-print(new)
+
+li = 5
+
+print(func(li))
