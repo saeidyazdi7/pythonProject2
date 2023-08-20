@@ -1,7 +1,3 @@
-def func(x):
-    return x % 3
-
-
-li = 5
-
-print(func(li))
+s = "Eaeid"
+start_with = lambda s: True if s.startswith("s") else False
+print(start_with(s))
