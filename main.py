@@ -1,3 +1,2 @@
-s = "Eaeid"
-start_with = lambda s: True if s.startswith("s") else False
-print(start_with(s))
+is_num = lambda s: s.replace(".", "", 1).isdigit()
+print(is_num("4.3"))
