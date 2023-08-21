@@ -1,9 +1,12 @@
-def revgen(s):
-    t = len(s)
-    for i in range(t - 1, -1, -1):
-        yield s[i]
+def my_gen(even_or_add="e"):
+    c = 0
+    if even_or_add == "o":
+        c = 1
+    while True:
+        yield c
+        c += 2
 
 
-sg = revgen("saeid yazdi")
-for ch in sg:
-    print(ch, end="")
+eo = my_gen("m")
+for _ in range(10):
+    print(next(eo))
