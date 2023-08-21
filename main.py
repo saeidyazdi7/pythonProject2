@@ -1,15 +1,10 @@
-def fibo():
-    f = 0
-    yield f
-    f1 = 1
-    yield f1
-    while True:
-        f3 = f + f1
-        yield f3
-        f = f1
-        f1 = f3
+def sumgen(lst):
+    s = 0
+    for i in lst:
+        s += i
+        yield s
 
 
-fib = fibo()
-for _ in range(10):
-    print(next(fib))
+sg = sumgen([1, 3, 5, 7, 9])
+for i in sg:
+    print(i)
