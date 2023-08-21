@@ -1,10 +1,9 @@
-def sumgen(lst):
-    s = 0
-    for i in lst:
-        s += i
-        yield s
+def revgen(s):
+    t = len(s)
+    for i in range(t - 1, -1, -1):
+        yield s[i]
 
 
-sg = sumgen([1, 3, 5, 7, 9])
-for i in sg:
-    print(i)
+sg = revgen("saeid yazdi")
+for ch in sg:
+    print(ch, end="")
