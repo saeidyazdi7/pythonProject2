@@ -1,9 +1,9 @@
-def my_gen(r=10):
-    for i in range(r):
-        yield i ** 2
+def gen():
+    yield 3
 
 
-g = my_gen()
-print(list(g))
-g2 = my_gen()
-print(list(g2))
+g = gen()
+for i in g:
+    if i == 4:
+        g.throw(ValueError("error"))
+print(i)
