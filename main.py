@@ -1,9 +1,10 @@
-def gen():
-    yield 3
+def my_enumrate(sequence, start=0):
+    c = start
+    for i in sequence:
+        yield c, i
+        c += 1
 
 
-g = gen()
-for i in g:
-    if i == 4:
-        g.throw(ValueError("error"))
-print(i)
+list1 = ["saeid", "reza", "roham"]
+for i, j in my_enumrate(list1):
+    print(i, j)
