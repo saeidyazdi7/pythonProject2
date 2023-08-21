@@ -1,10 +1,15 @@
-def my_enumrate(sequence, start=0):
-    c = start
-    for i in sequence:
-        yield c, i
-        c += 1
+def fibo():
+    f = 0
+    yield f
+    f1 = 1
+    yield f1
+    while True:
+        f3 = f + f1
+        yield f3
+        f = f1
+        f1 = f3
 
 
-list1 = ["saeid", "reza", "roham"]
-for i, j in my_enumrate(list1):
-    print(i, j)
+fib = fibo()
+for _ in range(10):
+    print(next(fib))
