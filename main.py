@@ -1,8 +1,9 @@
-def my_gen():
-    for i in range(1000):
-        yield i ** 2
+def my_gen(start, end, step=1):
+
+    while start < end:
+        yield start
+        start += step
 
 
-g = my_gen()
-for i in g:
-    print(i)
+gr = my_gen(10, 20, 2)
+print(list(gr))
