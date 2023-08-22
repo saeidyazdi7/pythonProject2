@@ -1,13 +1,9 @@
-from time import sleep
-
-
-def reverse(n):
-    if n == 0:
+def f(n):
+    if n < 3:
         return
-    sleep(1)
-    print(n)
-    n -= 1
-    reverse(n)
+    elif n % 3 == 0:
+        print(n)
+    f(n - 1)
 
 
-reverse(10)
+f(10)
