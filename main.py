@@ -1,23 +1,16 @@
-from functools import wraps
+def co(words):
+    print("start")
+    w = None
+    while True:
+        word = yield w
+        if word not in words:
+            w = word
+        else:
+            w = "x" * len(word)
 
 
-def coo(func):
-    @wraps(func)
-    def start(*args, **kwargs):
-        gn = func()
-        next(gn)
-        return gn
-
-    return start
-
-
-@coo
-def my_gen():
-    # print("start")
-    for i in range(2):
-        name = yield i
-        print("my name", name)
-
-
-g = my_gen()
-g.send("saeid")
+g = co(["tof", "gav", "hosh"])
+next(g)
+print(g.send("reza"))
+print(g.send("hosh"))
+print(g.send("gav"))
