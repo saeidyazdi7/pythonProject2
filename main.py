@@ -1,16 +1,11 @@
-def co(words):
-    print("start")
-    w = None
-    while True:
-        word = yield w
-        if word not in words:
-            w = word
-        else:
-            w = "x" * len(word)
+def ave(li):
+    return sum(li), len(li)
 
 
-g = co(["tof", "gav", "hosh"])
-next(g)
-print(g.send("reza"))
-print(g.send("hosh"))
-print(g.send("gav"))
+setattr(ave, "schoolName", "shafagh")
+print(ave.schoolName)
+print(ave.__dict__)
+print(getattr(ave, "schoolName"))
+# ave.schoolName = "Sadat"
+# print(dir(ave))
+# print(ave.schoolName)
