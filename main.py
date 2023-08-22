@@ -1,9 +1,16 @@
-def power(n):
-    if len(n) <= 1:
-        return n
+# تعریف یک تابع بازگشتی به نام is_palindrome
+def is_palindrome(s):
+    # اگر رشته خالی باشد یا فقط یک حرف داشته باشد، True را برگردان
+    if len(s) <= 1:
+        return True
+    # در غیر این صورت، بررسی کن که اولین و آخرین حرف رشته با هم برابر هستند یا خیر
     else:
-        return n[-1] + power(n[:-1])
+        # اگر برابر نباشند، False را برگردان
+        if s[0] != s[-1]:
+            return False
+        # اگر برابر باشند، باقی رشته را بدون اولین و آخرین حرف برای بررسی بفرست
+        else:
+            return is_palindrome(s[1:-1])
 
 
-e = "Saeid سلام"
-print(power(e))
+print(is_palindrome("123321"))
