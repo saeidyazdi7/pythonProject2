@@ -1,7 +1,13 @@
-def ave(li):
-    return sum(li) / len(li)
+from time import sleep
 
 
-setattr(ave, "schoolName", "sadat")
-if hasattr(ave, "schoolName"):
-    print(getattr(ave, "schoolName"))
+def reverse(n):
+    if n == 0:
+        return
+    sleep(1)
+    print(n)
+    n -= 1
+    reverse(n)
+
+
+reverse(10)
