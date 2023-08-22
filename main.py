@@ -1,23 +1,9 @@
-from functools import wraps
-
-
-def memoize(func):
-    memory = {}
-
-    @wraps(func)
-    def wrapper_decorator(n):
-        if n not in memory:
-            memory[n] = func(n)
-        return memory[n]
-
-    return wrapper_decorator
-
-
-@memoize
-def fib(n):
-    if n == 0 or n == 1:
+def power(n):
+    if len(n) <= 1:
         return n
-    return fib(n - 1) + fib(n - 2)
+    else:
+        return n[-1] + power(n[:-1])
 
 
-print(fib(300))
+e = "Saeid سلام"
+print(power(e))
