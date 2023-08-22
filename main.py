@@ -1,12 +1,11 @@
-def my_gen(even_or_add="e"):
-    c = 0
-    if even_or_add == "o":
-        c = 1
+def sending():
+    print("ready")
     while True:
-        yield c
-        c += 2
+        name = yield
+        print("my name:", name)
 
 
-eo = my_gen("m")
-for _ in range(10):
-    print(next(eo))
+o = sending()
+next(o)
+o.send("saeid")
+o.send("reza")
