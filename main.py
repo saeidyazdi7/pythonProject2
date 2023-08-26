@@ -4,4 +4,4 @@ def func(s):
         print(i)
 
 
-func
+fun
