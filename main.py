@@ -1,9 +1,7 @@
-# تعریف یک تابع بازگشتی به نام is_palindrome
-def version(s):
-    if s < 10:
-        return s
-    else:
-        return s % 10 + version(s // 10)
+def func(s):
+    while o := input(" "):
+        p = sum(s[0], s[1])
+        print(p)
 
 
-print(version(1234))
+func
