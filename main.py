@@ -1,3 +1,3 @@
-s = [1, -2, -3, 4]
-x = [abs(i) for i in s]
+names = ['saeid', 'reza']
+x = [cph for name in names for cph in name]
 print(x)
