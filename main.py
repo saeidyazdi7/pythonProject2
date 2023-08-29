@@ -1,7 +1,10 @@
-matrix = [
-    [1, 2, 3, 4],
-    [7, 8, 9, 10],
-    [11, 12, 13, 14],
-]
-x = [[row[i] for row in matrix] for i in range(4)]
-print(x)
+def func(x):
+    if x % 2 != 0:
+        return x
+    else:
+        return 0
+
+
+x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+z = [func(j) for j in x]
+print(z)
