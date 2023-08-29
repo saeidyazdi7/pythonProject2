@@ -1,3 +1,7 @@
-names = ['saeid', 'reza']
-x = [cph for name in names for cph in name]
+matrix = [
+    [1, 2, 3, 4],
+    [7, 8, 9, 10],
+    [11, 12, 13, 14],
+]
+x = [[row[i] for row in matrix] for i in range(4)]
 print(x)
