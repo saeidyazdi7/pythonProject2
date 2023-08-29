@@ -1,3 +1,3 @@
 s = [1, 2, 3]
-s.reverse()
+s.sort(reverse=True)
 print(s)
