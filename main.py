@@ -1,7 +1,1 @@
-def func(s):
-    while o := input(" "):
-        p = sum(s[0], s[1])
-        print(i)
-
-
-fun
+print(divmod(20, 4))
