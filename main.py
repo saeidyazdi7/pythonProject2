@@ -1,6 +1,3 @@
-def func(x):
-    print(x ** 2)
+(f := lambda x: x ** 2)
 
-
-func(x := 5)
-print(x)
+print(f(5))
