@@ -1,1 +1,1 @@
-print(divmod(20, 4))
+print(abs(-2.15412))
