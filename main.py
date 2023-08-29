@@ -1,6 +1,3 @@
-x = [1, 2, 3, 4]
-d = {"l": (l := len(x)),
-     "s": (s := sum(x)),
-     "a": (a := s / l)
-     }
-print(d)
+s = [1, -2, -3, 4]
+x = [abs(i) for i in s]
+print(x)
