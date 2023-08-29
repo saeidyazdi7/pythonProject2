@@ -1,4 +1,6 @@
-x = []
-while (s := input("name:").lower()) != "q":
-    x.append(s)
-print("names:", x)
+def func(x):
+    print(x ** 2)
+
+
+func(x := 5)
+print(x)
