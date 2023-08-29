@@ -1,1 +1,1 @@
-print(abs(-2.15412))
+print(dir(int))
