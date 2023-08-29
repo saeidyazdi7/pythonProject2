@@ -1,2 +1,3 @@
-x = 16
-print(x.from_bytes(b'\x00\x00\x10'))
+s = [1, 2, 2, 2, 2, 2, 3]
+print(s)
+print(s.extend(4, 5, 6, 7, 8, 9))
