@@ -1,2 +1,3 @@
-s = bytearray("a", "utf-8")
-print(type(s))
+x = "Wie heißen Sie".encode("utf-8")
+print(x.decode())
+print(str(x, "utf-8"))
