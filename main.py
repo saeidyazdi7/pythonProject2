@@ -1,4 +1,3 @@
-x = "saeid"
-d = {"d": "_"}
-table = str.maketrans(d)
-print(x.translate(table))
+s = "saeid, yazdi,sasa,ololo"
+print(s.split(",",1))
+print(s.rsplit(",", 1))
