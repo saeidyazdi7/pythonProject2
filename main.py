@@ -1,2 +1,3 @@
-x = {'x': 'reza'}
-print("{x}".format_map(x))
+x = "saeid"
+print(x.index("h"))
+print(x.find("h"))
