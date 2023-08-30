@@ -1,2 +1,4 @@
 x = "saeid"
-print(x.isalpha())
+d = {"d": "_"}
+table = str.maketrans(d)
+print(x.translate(table))
