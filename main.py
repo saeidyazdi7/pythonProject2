@@ -1,3 +1,4 @@
-h = "1"
-m = "8"
-print(h.zfill(2), ":", m.zfill(2))
+f = open("note.txt", "w+")
+print(f.write("saeid salam chetory"))
+print(f.readline( ))
+print(f.write("?"))
